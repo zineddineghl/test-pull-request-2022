@@ -40,22 +40,44 @@ Au lieu d'apporter des modifications au répertoire sur la branche `main` par d�
 ```shell
 $ git checkout -b <new-branch-name> 
 ```
-- Où `<new-branch-name>` est le nom de la branche que nous allons appeler : `pull-request-test-<votre_utilisateur>`
+- Où `<new-branch-name>` est le nom de la branche que nous allons appeler : `pull-request-demo-<votre_utilisateur>`
 
 - Pour vérifier que l'espace de travail est bien sur la nouvelle branche (et non sur la branche `main`) tapez :
 
 ```shell
 $ git branch
   main
-* pull-request-test-<votre_utilisateur>
+* pull-request-demo-<votre_utilisateur>
 ```
-- L'étoile * indique la branche sur laquelle vous travaillez. Désormais les modifications n'affectent que cette branche. Assurez-vous que cette branche est bien `pull-request-test-<votre_utilisateur>`
+- L'étoile * indique la branche sur laquelle vous travaillez. Désormais les modifications n'affectent que cette branche. Assurez-vous que cette branche est bien `pull-request-demo-<votre_utilisateur>`
 
-- La branche créée appartient à votre répertoire local, mais le répertoire distant n'en a pas encore connaissance. Pour synchroniser les changements entre le répertoire local et distant, écrivez la commande : 
+- La branche créée appartient à votre référentiel local, mais le référentiel distant n'en a pas encore connaissance. Pour synchroniser les changements entre le référentiel local et distant, écrivez la commande : 
 
 ```shell
 $ git push origin pull-request-test-<votre_utilisateur>
 ```
+- A partir de maintenant nous allons faire quelques modifications sur cette branche.
+
+
+### 3. Modifications sur la branche thématique `pull-request-demo-<votre_utilisateur>`
+
+En principe, nous pourrions apporter n'importe quel changement à partir de maintenant. Cependant, pour éviter de futurs conflits lorsque nous ferons la pull request sur [le réferentiel d'origin](https://github.com/juanluck/test-pull-request-2022), nous allons vous proposer de travailler sur un répertoire exclusif personnalisé et chiffré. 
+
+- Sous linux, la commande `shasum` permet d'obtenir le hash (checksum) de n'importe quelle chaîne de caractères ou fichier. Par example :
+
+```shell
+$ echo "John Smith" | shasum
+8d0ed1ffa6ba0f6e6cbb74534b4785a916d73ec0
+```
+- Ce hash `8d0ed1ffa6ba0f6e6cbb74534b4785a916d73ec0` correspond exclusivement à la chaîne "John Smith". Vous pouvez répéter ladite commande et vérifier qu'elle correspond audit code. Si nous modifions légèrement la chaîne de caractères, ce code changera complètement. Essayez, par exemple, avec "Johny Smith".
+
+- Pour obtenir un code crypté qui vous est propre, vous pouvez exécuter la commande avec votre nom et prénom : 
+
+```shell
+$ echo "<Votre Prénom> <Votre Nom>" | shasum
+<hash de votre nom>
+```
+- Copiez dans le presse-papier votre code de hachage `<hash de votre nom>`
 
 
 
