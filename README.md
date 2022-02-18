@@ -33,13 +33,29 @@ $ cd test-pull-request-2022
 
 ### 2. Création d'une branche thématique 
 
-Au lieu d'apporter des modifications au répertoire sur la branche `master` par défaut, nous allons travailler sur une nouvelle branche pour effectuer ces modifications.
+Au lieu d'apporter des modifications au répertoire sur la branche `main` par défaut, nous allons travailler sur une nouvelle branche pour effectuer ces modifications.
 
-- Pour créer une branche, utilisez la commande suivante depuis le repertoire `test-pull-request-2022`
+- Pour créer une branche, utilisez la commande suivante depuis le repertoire `test-pull-request-2022` :
 
 ```shell
 $ git checkout -b <new-branch-name> 
 ```
-- Où `<new-branch-name>` est le nom de la branche que nous allons appeler : `pull-request-test-<votre_utilisateur> `
+- Où `<new-branch-name>` est le nom de la branche que nous allons appeler : `pull-request-test-<votre_utilisateur>`
+
+- Pour vérifier que l'espace de travail est bien sur la nouvelle branche (et non sur la branche `main`) tapez :
+
+```shell
+$ git branch
+  main
+* pull-request-test-<votre_utilisateur>
+```
+- L'étoile * indique la branche sur laquelle vous travaillez. Désormais les modifications n'affectent que cette branche. Assurez-vous que cette branche est bien `pull-request-test-<votre_utilisateur>`
+
+- La branche créée appartient à votre répertoire local, mais le répertoire distant n'en a pas encore connaissance. Pour synchroniser les changements entre le répertoire local et distant, écrivez la commande : 
+
+```shell
+$ git push origin pull-request-test-<votre_utilisateur>
+```
+
 
 
