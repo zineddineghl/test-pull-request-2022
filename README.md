@@ -96,4 +96,8 @@ $ echo "Fichier crée par <votre_utilisateur> le $(date)" > filigrane.txt
 
 Maintenant que les données d'une nouvelle branche ont été poussées vers github, nous pouvons voir qu'une nouvelle option apparaît sur github : 
 
+![Pull request](./images/pullrequest.png)
+
+- Il suffit de cliquer sur Compare & pull request pour initier une pull request.
+
 
