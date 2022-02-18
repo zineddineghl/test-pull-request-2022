@@ -100,4 +100,23 @@ Maintenant que les données d'une nouvelle branche ont été poussées vers gith
 
 - Il suffit de cliquer sur Compare & pull request pour initier une pull request.
 
+- Lors de la création d'une `pull request`, vous devrez remplir plusieurs options. Une image similaire à la suivante doit apparaître à l'écran : 
+
+![Pull request](./images/openpr.png)
+
+- Bien que l'image puisse être un peu différente dans votre cas, l'idée d'une `pull request` est de demander à l'utilisateur du référentiel d'origine (`juanluck`) d'accepter les modifications apportées dans votre branche. Pour cela, assurez-vous que en `base` apparaît `main:juanluck` (destination de votre requête) et en `compare` la branche où vous avez effectué vos modifications (origine de votre requête). Vous pouvez également ajouter des comentaires et ensuite cliquez sur `Create pull request`.
+
+- **Toutes nos félicitations!!** Vous venez de faire votre première pull request. Maintenant, tout ce que vous avez à faire est d'avoir un peu de patience pour que `juanluck` accepte les modifications sur le référentiel d'origine. Cette pratique que nous venons d'effectuer est la manière standard de collaborer dans un référentiel open source. 
+
+### 5. Accepter une pull request 
+
+Cette pratique est conçue pour initier une pull request. Cependant, dans cette section, nous allons montrer comment nous pouvons accepter une demande de ce type. Si vous souhaitez vous entraîner à la création et à l'acceptation de pull requests, il vous suffit de répéter les étapes précédentes avec le référentiel d'un collègue ou même avec votre propre référentiel (pas besoin de faire un `fork` dans ce cas puisque le dépôt vous appartient. ). 
+
+- Dans le menu github en haut, vous pouvez voir l'option `Pull request`, qui permet de visualiser toutes les requêtes ouvertes de ce type. 
+
+- Dans le cas de cet exercice, il n'y a qu'une seule requête ouverte de ce type dont vous pouvez voir les détails ci-dessous. Les différents onglets : `Conversation`, `commits`,`files changed` permettent d'analyser la demande avant de l'accepter. Il ne reste plus, si vous êtes satisfait, qu'à cliquer sur le bouton vert `Merge pull request`. **Voilà les modifications ont été incorporées dans le référentiel source.**
+
+![Pull request](./images/acceptpr.png)
+
+
 
