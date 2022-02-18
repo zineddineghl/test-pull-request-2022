@@ -6,3 +6,4 @@ Référentiel pour tester la pull request du cours [Introduction à la gestion d
 
 - Cliquez sur `fork` en haut à droite de github 
 
+![Fork](./images/fork.png)
