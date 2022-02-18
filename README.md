@@ -13,7 +13,7 @@ Référentiel pour tester la pull request du cours [Introduction à la gestion d
 
 - Le fork vous permet de copier ce référentiel sur votre compte github. Désormais, vous pouvez travailler avec cette copie du référentiel original. Cela va vous permetre d'expérimenter librement et faire des modifications sans affecter le projet d'origine. 
 
-- Voir qu'après le `fork`, vous avez une copie du référentiel dans votre propre espace https://github.com/<votre_utilisateur>/test-pull-request-2022
+- Voir qu'après le `fork`, vous avez une copie du référentiel dans votre propre espace `https://github.com/<votre_utilisateur>/test-pull-request-2022`
 
 - Créez un nouveau répertoire sur votre machine local (que vous pouvez appeler par exemple `tp4`) et clonez le référentiel depuis votre compte :
 
