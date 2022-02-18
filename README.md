@@ -78,5 +78,22 @@ $ echo "<Votre Prénom> <Votre Nom>" | shasum
 ```
 - Copiez dans le presse-papier votre code de hachage `<hash de votre nom>`
 
+- Construisons un répertoire avec ce code de hachage et laissons notre filigrane. Pour ce faire, nous nous placerons d'abord sur le répertoire `pr_users` :
+
+```shell
+$ cd pr_users
+$ mkdir <hash de votre nom>
+$ cd <hash de votre nom>
+```
+- Ensuite, nous pouvons créer un simple fichier texte avec la date et l'utilisateur qui l'a créé en filigrane :
+
+```shell
+$ echo "Fichier crée par <votre_utilisateur> le $(date)" > filigrane.txt
+```
+- Nous n'avons qu'à synchroniser les modifications localement (`git status`,`git add`, `git commit`) et synchroniser la branche avec le répertoire distant (`git push`). Pour rappel, ces modifications ont été apportées à la branche  `pull-request-demo-<votre_utilisateur>`
+
+### 4. Faire une pull request 
+
+Maintenant que les données d'une nouvelle branche ont été poussées vers github, nous pouvons voir qu'une nouvelle option apparaît sur github : 
 
 
