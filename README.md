@@ -11,7 +11,7 @@ Référentiel pour tester la pull request du cours [Introduction à la gestion d
 
 ![Fork](./images/fork.png)
 
-- Le fork vous permet de copier ce référentiel sur votre compte github. Désormais, vous pouvez travailler avec cette copie du référentiel original. Cela va vous permetre d'expérimenter librement et faire des modifications sans affecter le projet d'origine. 
+- Le fork vous permet de copier ce référentiel sur votre compte github. Désormais, vous pouvez travailler avec cette copie du référentiel original. Cela va vous permetre d'expérimenter librement et faire des modifications sans affecter le projet d'origine (celui dans le compte `juanluck`). 
 
 - Voir qu'après le `fork`, vous avez une copie du référentiel dans votre propre espace `https://github.com/<votre_utilisateur>/test-pull-request-2022`
 
@@ -57,7 +57,6 @@ $ git branch
 $ git push origin pull-request-test-<votre_utilisateur>
 ```
 - A partir de maintenant nous allons faire quelques modifications sur cette branche.
-
 
 ### 3. Modifications sur la branche thématique `pull-request-demo-<votre_utilisateur>`
 
