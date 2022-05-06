@@ -54,7 +54,7 @@ $ git branch
 - La branche créée appartient à votre référentiel local, mais le référentiel distant n'en a pas encore connaissance. Pour synchroniser les changements entre le référentiel local et distant, écrivez la commande : 
 
 ```shell
-$ git push origin pull-request-test-<votre_utilisateur>
+$ git push origin pull-request-demo-<votre_utilisateur>
 ```
 - A partir de maintenant nous allons faire quelques modifications sur cette branche.
 
